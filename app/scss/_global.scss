@@ -1,16 +1,29 @@
 body{
-  font-size: 18px;
-  line-height: 26px;
+  &::-webkit-scrollbar {
+    width: 10px;         /* ширина scrollbar */
+    height: 8px;
+  }
+  &::-webkit-scrollbar-track {
+    background: #b9b9b9;      /* цвет дорожки */
+  }
+  &::-webkit-scrollbar-thumb {
+    background-color: $accent;    /* цвет плашки */
+    border-radius: 10px;       /* закругления плашки */
+    border: 3px solid $accent;  /* padding вокруг плашки */
+  }
+
+  font-size: calc( (100vw - 320px)/(1920 - 320) * (18 - 14) + 14px);
+  line-height: calc( (100vw - 320px)/(1920 - 320) * (26 - 20) + 20px);
   @extend %lora-400;
 }
 .container{
-  max-width: 1280px;
+  max-width: 1440px;
   margin: 0 auto;
   padding: 0 20px;
 }
 
 .title{
-  font-size: 45px;
+  font-size: calc( (100vw - 320px)/(1920 - 320) * (45 - 24) + 24px);
   line-height: 40px;
   font-weight: 600;
   text-align: center;
@@ -20,7 +33,7 @@ body{
   &::before, &::after{
     content: '';
     display: inline-block;
-    width: 100px;
+    width: calc( (100vw - 320px)/(1920 - 320) * (100 - 30) + 30px);
     height: 2px;
     vertical-align: middle;
     background-color: #244253;

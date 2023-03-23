@@ -1,4 +1,5 @@
-$(function(){
+//плавный скролл
+$(function(){ 
 
   $('.menu, .footer__menu, a[href*="#"]').on('click', function() {
     $('html, body').animate({
@@ -13,29 +14,32 @@ $(function(){
 
 });
 
+//3-d меню 
 const burger_menu = document.querySelector(".burger__menu");
-
 const main = document.querySelector(".main__inner");
-
 burger_menu.addEventListener("click", () => {
     main.classList.toggle("active");
 });
 
-let bg = document.querySelector('.main__bg');
-window.addEventListener('mousemove', function(e) {
+//параллакс эффект
+if (!window.matchMedia('(pointer: coarse)').matches) {
+  let bg = document.querySelector('.main__bg');
+  window.addEventListener('mousemove', function(e) {
     let x = e.clientX / window.innerWidth;
-    let y = e.clientY / window.innerHeight;  
+    let y = e.clientY / window.innerHeight;
     bg.style.transform = 'translate(-' + x * 50 + 'px, -' + y * 50 + 'px)';
-});
+  });
+}
 
+//слайдер
 const progressCircle = document.querySelector(".autoplay-progress svg");
 const progressContent = document.querySelector(".autoplay-progress span");
 var swiper = new Swiper(".mySwiper", {
   slidesPerView: 'auto',
-  spaceBetween: 30,
+  spaceBetween: 10,
   centeredSlides: false,
   autoplay: {
-    delay: 7000,
+    delay: 700000,
     disableOnInteraction: false
   },
   pagination: {
