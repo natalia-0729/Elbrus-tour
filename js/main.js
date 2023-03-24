@@ -39,7 +39,7 @@ var swiper = new Swiper(".mySwiper", {
   spaceBetween: 10,
   centeredSlides: false,
   autoplay: {
-    delay: 700000,
+    delay: 10000,
     disableOnInteraction: false
   },
   pagination: {
@@ -52,4 +52,10 @@ var swiper = new Swiper(".mySwiper", {
       progressContent.textContent = `${Math.ceil(time / 1000)}s`;
     }
   }
+});
+
+//анимация для блоков
+AOS.init({
+  once: true,
+  disable: 'mobile'
 });
