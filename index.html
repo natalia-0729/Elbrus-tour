@@ -6,10 +6,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Тур на Эльбрус</title>
   <meta name="description" content="">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
   <link rel="stylesheet" href="css/style.min.css">
 </head>
-<body class="mobile" id="body">
+<body id="body">
   
   
   <main class="main">
@@ -72,7 +73,7 @@
       <div class="advantages__items">
 
         <div class="advantages__item">
-          <div class="advantages__content">
+          <div class="advantages__content" data-aos="fade-right" data-aos-duration="1100">
             <div class="advantages__number">01</div>
             <div class="advantages__descr">
               <h2 class="advantages__title">С нами <span class="advantages__title-span">надежно</span> </h2>
@@ -80,29 +81,27 @@
             </div>
           </div>
 
-          <div class="aaa">
             <div class="advantages__box">
-              <div class="advantages__card">
+              <div class="advantages__card" data-aos="fade-left" data-aos-duration="1100">
                 <div>
                   <img class="advantages__card-img" src="images/advantages_1.jpg" alt="">
                 </div>
               </div>
             </div>
-          </div>
 
         </div>
 
         <div class="advantages__item advantages__item-2">
 
           <div class="advantages__box advantages__box-2">
-            <div class="advantages__card">
+            <div class="advantages__card" data-aos="fade-right" data-aos-duration="1300">
               <div>
                 <img class="advantages__card-img" src="images/advantages_2.jpg" alt="">
               </div>
             </div>
           </div>
 
-          <div class="advantages__content">
+          <div class="advantages__content" data-aos="fade-left" data-aos-duration="1300">
             <div class="advantages__number">02</div>
             <div class="advantages__descr advantages__descr-last">
               <h2 class="advantages__title">С нами <span class="advantages__title-span">комфортно</span> </h2>
@@ -112,7 +111,7 @@
         </div>
         
         <div class="advantages__item">
-          <div class="advantages__content">
+          <div class="advantages__content" data-aos="fade-right" data-aos-duration="1500">
             <div class="advantages__number">03</div>
             <div class="advantages__descr advantages__descr-last">
               <h2 class="advantages__title">С нами <span class="advantages__title-span">безопасно</span></h2>
@@ -121,7 +120,7 @@
           </div>
 
           <div class="advantages__box">
-            <div class="advantages__card">
+            <div class="advantages__card" data-aos="fade-left" data-aos-duration="1400">
               <div>
                 <img class="advantages__card-img" src="images/advantages_3.jpg" alt="">
               </div>
@@ -148,15 +147,15 @@
   <section class="numbers" id="counts">
     <div class="container">
       <div class="numbers__items">
-        <div class="numbers__item">
+        <div class="numbers__item" data-aos="zoom-in" data-aos-duration="1200">
           <div class="numbers__sum odometer">10</div>
           <p class="numbers__text">инструкторов</p>
         </div>
-        <div class="numbers__item">
+        <div class="numbers__item" data-aos="zoom-in" data-aos-duration="1200">
           <div class="numbers__sum">1750</div>
           <p class="numbers__text">смельчаков, покоривших Эльбрус</p>
         </div>
-        <div class="numbers__item">
+        <div class="numbers__item" data-aos="zoom-in" data-aos-duration="1200">
           <div class="numbers__sum">15</div>
           <p class="numbers__text">лет опыта</p>
         </div>
@@ -219,23 +218,23 @@
     <div class="container">
      <div class="gallery__items">
 
-      <div class="gallery__item">
-        <img class="gallery__img" src="images/gallery_1.jpg" alt="people in the mountains">
+      <div class="gallery__item" >
+        <img class="gallery__img" src="images/gallery_1.jpg" alt="people in the mountains" data-aos="flip-left" data-aos-duration="1200">
+      </div>
+      <div class="gallery__item" >
+        <img class="gallery__img" src="images/gallery_2.jpg" alt="people in the mountains" data-aos="flip-left" data-aos-duration="1200">
+      </div>
+      <div class="gallery__item" >
+        <img class="gallery__img" src="images/gallery_4.jpg" alt="people in the mountains" data-aos="flip-left" data-aos-duration="1200">
       </div>
       <div class="gallery__item">
-        <img class="gallery__img" src="images/gallery_2.png" alt="people in the mountains">
+        <img class="gallery__img" src="images/gallery_3.jpg" alt="people in the mountains" data-aos="flip-right" data-aos-duration="1200">
       </div>
       <div class="gallery__item">
-        <img class="gallery__img" src="images/gallery_4.jpg" alt="people in the mountains">
+        <img class="gallery__img" src="images/gallery_5.jpg" alt="people in the mountains" data-aos="flip-right" data-aos-duration="1200">
       </div>
       <div class="gallery__item">
-        <img class="gallery__img" src="images/gallery_3.jpg" alt="people in the mountains">
-      </div>
-      <div class="gallery__item">
-        <img class="gallery__img" src="images/gallery_5.jpg" alt="people in the mountains">
-      </div>
-      <div class="gallery__item">
-        <img class="gallery__img" src="images/gallery_6.jpg" alt="people in the mountains">
+        <img class="gallery__img" src="images/gallery_6.jpg" alt="people in the mountains" data-aos="flip-right" data-aos-duration="1200">
       </div>
         
      </div>
@@ -258,7 +257,7 @@
 
         <div class="question__content-item">
           <input class="question__content-input" type="checkbox" id="faq_2">
-          <label class="question__content-title" for="faq_2">Какую экипирувку нужно подготовить для восхождения?</label>
+          <label class="question__content-title" for="faq_2">Какую экипировку нужно подготовить для восхождения?</label>
           <div class="question__content-text">
             <p>Комбинезон, теробелье, кошки, ледоруб, система страховки с двумя усами самостраховки и два карабина, палки трекинговые &ndash; телескопические, термос, фонарь налобный, рюкзак грузовой на 80&ndash;100 литров, штурмовой рюкзак на 30&ndash;50 литров. Полный список необходимого, мы высылаем после оплаты тура.</p>
           </div>
@@ -282,7 +281,7 @@
           <input class="question__content-input" type="checkbox" id="faq_5">
           <label class="question__content-title" for="faq_5">Что есть небезопасного в горах на проверенных маршрутах и с гидом?</label>
           <div class="question__content-text">
-            <p>На тропе могут быть трещины, помога может измениться. Гид готов к любым ситуациям, и отлично знает маршрут. Поэтому каждый участник должен беспрекословно выполнять указания гида.</p>
+            <p>На тропе могут быть трещины, погода может измениться. Гид готов к любым ситуациям, и отлично знает маршрут. Поэтому каждый участник должен беспрекословно выполнять указания гида.</p>
           </div>
         </div>
 
@@ -344,6 +343,8 @@
     </div>
   </footer>
 
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js">
+  </script>
   <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
   <script src="js/main.min.js"></script>
 </body>
