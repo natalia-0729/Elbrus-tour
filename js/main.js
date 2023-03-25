@@ -15,32 +15,20 @@ $(function(){
 });
 
 //3-d меню 
-$( window ).resize(function() {
-  $window = $(window);
-  if( $window .width() > 800){
-  
-    const burger_menu = document.querySelector(".burger__menu");
-    const main = document.querySelector(".main__inner");
-    burger_menu.addEventListener("click", () => {
-        main.classList.toggle("active");
-    });
+const burger_menu = document.querySelector(".burger__menu");
+const main = document.querySelector(".main__inner");
+burger_menu.addEventListener("click", () => {
+    main.classList.toggle("active");
+});
 
-    let bg = document.querySelector('.main__bg');
+//параллакс эффект
+if (!window.matchMedia('(pointer: coarse)').matches) {
+  let bg = document.querySelector('.main__bg');
   window.addEventListener('mousemove', function(e) {
     let x = e.clientX / window.innerWidth;
     let y = e.clientY / window.innerHeight;
     bg.style.transform = 'translate(-' + x * 50 + 'px, -' + y * 50 + 'px)';
   });
-  }
-  
-   });    
-  
-  
-
-
-//параллакс эффект
-if (!window.matchMedia('(pointer: coarse)').matches) {
-  
 }
 
 //слайдер
