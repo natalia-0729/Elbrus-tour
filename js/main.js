@@ -15,10 +15,15 @@ $(function(){
 });
 
 //3-d меню 
-const burger_menu = document.querySelector(".burger__menu");
-const main = document.querySelector(".main__inner");
-burger_menu.addEventListener("click", () => {
-    main.classList.toggle("active");
+$(document).ready(function(){
+  if (/Android|BlackBerry|iPhone|iPad|iPod|webOS/i.test(navigator.userAgent) === false) {
+      // not a mobile device
+      const burger_menu = document.querySelector(".burger__menu");
+      const main = document.querySelector(".main__inner");
+      burger_menu.addEventListener("click", () => {
+          main.classList.toggle("active");
+      });
+  }​
 });
 
 //параллакс эффект
