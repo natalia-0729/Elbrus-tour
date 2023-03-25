@@ -15,25 +15,32 @@ $(function(){
 });
 
 //3-d меню 
-$(document).ready(function(){
-  if (/Android|BlackBerry|iPhone|iPad|iPod|webOS/i.test(navigator.userAgent) === false) {
-      // not a mobile device
-      const burger_menu = document.querySelector(".burger__menu");
-      const main = document.querySelector(".main__inner");
-      burger_menu.addEventListener("click", () => {
-          main.classList.toggle("active");
-      });
-  }​
-});
+$( window ).resize(function() {
+  $window = $(window);
+  if( $window .width() > 800){
+  
+    const burger_menu = document.querySelector(".burger__menu");
+    const main = document.querySelector(".main__inner");
+    burger_menu.addEventListener("click", () => {
+        main.classList.toggle("active");
+    });
 
-//параллакс эффект
-if (!window.matchMedia('(pointer: coarse)').matches) {
-  let bg = document.querySelector('.main__bg');
+    let bg = document.querySelector('.main__bg');
   window.addEventListener('mousemove', function(e) {
     let x = e.clientX / window.innerWidth;
     let y = e.clientY / window.innerHeight;
     bg.style.transform = 'translate(-' + x * 50 + 'px, -' + y * 50 + 'px)';
   });
+  }
+  
+   });    
+  
+  
+
+
+//параллакс эффект
+if (!window.matchMedia('(pointer: coarse)').matches) {
+  
 }
 
 //слайдер
