@@ -331,14 +331,16 @@ ul li.active a{
   }
   &__title{
     max-width: 200px;
-    margin-left: calc( (100vw - 320px)/(1920 - 320) * (190 - 80) + 120px);
-
+    margin-left: calc( (100vw - 320px)/(1920 - 320) * (190 - 140) + 140px);
     font-size: calc( (100vw - 320px)/(1920 - 320) * (55 - 30) + 30px);
     line-height: calc( (100vw - 320px)/(1920 - 320) * (55 - 30) + 30px);
     font-weight: 700;
     color: #eee;
     
     margin-bottom: 15px;
+    &-last{
+      margin-left: calc( (100vw - 320px)/(1920 - 320) * (230 - 140) + 140px);
+    }
   }
   &__title-span{
     margin-left:  calc( (100vw - 320px)/(1920 - 320) * (100 - 65) + 65px);
